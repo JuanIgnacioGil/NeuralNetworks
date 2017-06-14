@@ -1,0 +1,1 @@
+function predictions = forward_propagation(W1, W2, X)% Your code goes here.x1 = X * W1;x2 = (1 + exp(-x1)).^(-1);predictions = x2 * W2;endfunction
