@@ -5,4 +5,3 @@ function hidden_probability = visible_state_to_hidden_probabilities(rbm_w, visib
 % This takes in the (binary) states of the visible units, and returns the activation probabilities of the hidden units conditional on those states.
     hidden_probability = (1 + exp(-rbm_w * visible_state)).^(-1);
 end
- 
